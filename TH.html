@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TH</title>
+</head>
+<body>
+<script>
+   let MyDate = function (day, month, year) {
+       this.day = day;
+       this.month = month ;
+       this.year = year ;
+       this.getDay = function () {
+           return this.day;
+       };
+       this.getMonth = function () {
+           return this.month ;
+       };
+       this.getYear = function () {
+           return this.year ;
+       };
+       this.setDay = function (day) {
+           this.day = day ;
+       };
+       this.setMonth = function (month) {
+           this.month = month ;
+       };
+       this.setYear = function (year) {
+           this.year = year ;
+       };
+
+
+   };
+    let hau = new MyDate(3,9,1997);
+   hau.setDay(10);
+   hau.setMonth(1);
+   hau.setYear(2019);
+   let date = hau.getDay();
+   let month = hau.getMonth();
+   let year = hau.getYear() ;
+   console.log(date +'/' + month + '/' + year);
+
+</script>
+</body>
+</html>
